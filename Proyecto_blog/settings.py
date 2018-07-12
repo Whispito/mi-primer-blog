@@ -25,7 +25,7 @@ SECRET_KEY = '%@(-2_^!^%(o8m03cx)vd+!-#v2ov-ocl)=c^l(&t_$99jm!yh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [whispy.pythonanywhere.com,]
 
 
 # Application definition
