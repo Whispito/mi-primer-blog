@@ -19,6 +19,6 @@ from blog.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #re_path(r'^$',home ),
     re_path(r'^$',post_list),
+    re_path(r'^post/(?P<pk>[0-9]+)/$', post_detail, name='post_detail'),
 ]
