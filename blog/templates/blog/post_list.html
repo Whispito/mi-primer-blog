@@ -3,6 +3,19 @@
   <title>Proyecto Blog</title>
 </Head>
 <body>
-  Bienvenidos a esta pagina en pruebas
+  <div id="cabecera">
+    <h1><a href="/">Blog</a></h1>
+  </div>
+
+  <div id="posts">
+    {% for post in posts %}
+      <div>
+        <p> Published: {{post.published_date}}</p>
+        <h1> <a href="">{{post.title}}</a></h1>
+        <p> {{post.text|linebreaksbr}} </p>
+      </div>
+        
+    {% endfor %}
+  </div>
 </body>
 </html>
